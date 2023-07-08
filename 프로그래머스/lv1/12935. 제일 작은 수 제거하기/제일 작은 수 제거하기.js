@@ -14,7 +14,7 @@ function solution(arr) {
 
     /*
     // 참고
-    min = Math.min(arr);
+    min = Math.min(arr); 과 min = Math.min(...arr);
     
     주어진 코드에서 NaN이 출력되는 이유는 Math.min() 함수에 올바른 인수를 전달하지 않았기 때문.
     Math.min() 함수는 개별적인 인수를 받아 최솟값을 반환합니다.
