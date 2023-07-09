@@ -7,3 +7,8 @@ function solution(s) {
     
     return answer;
 }
+/*
+    s.split('').sort((a, b) => {
+        return b - a;
+    }).join('');
+*/
