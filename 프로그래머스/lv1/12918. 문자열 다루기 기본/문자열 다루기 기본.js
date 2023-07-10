@@ -22,7 +22,6 @@ function solution(s) {
     // regex.test(테스트할문자열);
     
 */
-
 /*
     function solution(s) {
         s = s.split('').map(Number);
