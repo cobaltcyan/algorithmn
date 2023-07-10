@@ -14,5 +14,25 @@ function solution(price, money, count) {
     } else {
         answer = Math.abs(money - totalPrice);        
     }
+    
+    // 3항 연산자 이용
+    // answer = totalPrice < money ? 0 : Math.abs(money - totalPrice);
+    
     return answer;
 }
+/*
+    // 가우스의 공식 이용
+    const tmp = price * count * (count + 1) / 2 - money;
+    return tmp > 0 ? tmp : 0;
+    
+    // 기본
+    function solution(price, money, count) {
+        let answer = 0;
+
+        for (let i = 1; i <= count; i++) {
+            answer += price * i;
+        }
+
+        return answer > money ? answer - money : 0;
+    }
+*/
