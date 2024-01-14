@@ -20,3 +20,10 @@ function solution(array) {
 let exampleArray = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 console.log(solution(exampleArray));
 
+// 오름차순
+// arr.sort(function(a, b) {
+//     return a - b;
+// }
+
+// 내림차순
+// arr.sort((a, b) => b - a);
