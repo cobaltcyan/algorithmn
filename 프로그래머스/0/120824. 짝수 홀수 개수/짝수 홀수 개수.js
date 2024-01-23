@@ -12,3 +12,12 @@ function solution(num_list) {
     answer.push(num1, num2);
     return answer;
 }
+
+// for...of 배열순회 방식 
+// function solution(num_list) {
+//     var answer = [0,0];
+//     for(let a of num_list){
+//         answer[a%2] += 1
+//     }
+//     return answer;
+// }
