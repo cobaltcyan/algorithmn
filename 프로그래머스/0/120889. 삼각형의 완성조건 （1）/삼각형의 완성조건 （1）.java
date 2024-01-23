@@ -4,30 +4,21 @@ import java.util.Arrays;
 class Solution {
     public int solution(int[] sides) {
         int answer = 0;
-        
         Arrays.sort(sides);
-        // System.out.println(sides); 
+        System.out.println(sides);  //[I@53e25b76
+        System.out.println(sides.toString());  //[I@53e25b76
+        for (int side: sides) {
+            System.out.println(side);
+        }   // 2, 3, 6
         
-        // 출력 : 72 199 222
-        for (int side : sides) {
-            System.out.print(side + " ");
-        }
+//         if (sides[0] + sides[1] > sides[2])
+//             answer = 1;
+//         else
+//             answer = 2;
+
+        answer = (sides[0] + sides[1] > sides[2]) ? 1 : 2;
+        // answer = if (sides[0] + sides[1] > sides[2]) ? 1 : 2;    // 문법 오류
         
-        // 출력 : [I@ee7d9f1
-        // Java에서 배열을 직접 출력하면 배열의 toString() 메서드가 호출되어 해당 배열의 해시 코드가 출력됩니다. 
-        System.out.println(sides);
-        
-        // 출력 : [72, 199, 222]
-        // toString() 메서드가 아닌 Arrays.toString() 메서드로 변환 후 출력
-        System.out.println(Arrays.toString(sides));
-        
-        if (sides[0] + sides[1] <= sides[2]) {
-            answer = 2;
-        }
-        else
-            answer = 1;
-        
-        System.out.println(answer);
         
         return answer;
     }
