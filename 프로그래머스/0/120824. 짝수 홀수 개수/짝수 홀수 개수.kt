@@ -3,7 +3,6 @@ class Solution {
         // var answer: IntArray = intArrayOf()
         val answer = intArrayOf(0, 0)   // 변수 선언 및 초기화
         // println(num_list.sorted())  //	[1, 2, 3, 4, 5]
-
         for (num in num_list) {
             if (num % 2 == 0)
                 answer[0]++
