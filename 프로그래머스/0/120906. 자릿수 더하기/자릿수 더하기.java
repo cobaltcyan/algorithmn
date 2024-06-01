@@ -9,19 +9,15 @@ public class Solution {
     }
 }
 
-// 문제 풀어보기
 // class Solution {
 //     public int solution(int n) {
 //         int answer = 0;
 //         String str = Integer.toString(n);
-        
-//         int[] numbers = new int[str.length()];
-        
-//         for (int i = 0; i < str.length(); i++) {
-//             numbers[i] = str.charAt(i) - '0';
-//             sum = sum + numbers[i];
+//         String[] arr = str.split("");
+
+//         for(int i = 0; i < arr.length; i++) {
+//             answer += Integer.parseInt(arr[i]);
 //         }
-//         answer = sum;        
 //         return answer;
 //     }
 // }
